@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 
 function App() {
 
-    const [items, setItems] = useState([])
+    const [items, setItems] = useState([]);
 
     useEffect(() => {
         client.getEntries().then((response) => {
@@ -15,11 +15,13 @@ function App() {
 
     return (
         <div className="App">
-            <h1>DE Start point (edited)</h1>
-            <h1>Elements</h1>
-            { items.map( ( item ) => { return <li>{item.fields.title}</li>}) }
+            <h1>DE Start point (edited once more)</h1>
+            <h1>Elements:</h1>
+            <ul>
+                { items.map( ( item ) => { return <li>{item.fields.title}</li>}) }
+            </ul>
         </div>
     );
-};
+}
 
 export default App;
