@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>DE Start point</h1>
+            <h1>DE Start point (edited)</h1>
             <h1>Elements</h1>
             { items.map( ( item ) => { return <li>{item.fields.title}</li>}) }
         </div>
